@@ -36,7 +36,7 @@ The user will be able to add expenses and deposits to their budget with or witho
 
 This application runs in the browser. Nothing needs to be installed except for your default browser.
 
-- Repository can be found here: [GitHub](https://github.com/ramonpbarros/workout-tracker) Check out the code!
+- Repository can be found here: [GitHub](https://github.com/ramonpbarros/budget-tracker) Check out the code!
 
 ## Code Examples
 
