@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ramonpbarros/)
 
-> Web application that tracks daily workout routines.
+> Budget Tracker application to allow for offline access and functionality.
 
 ## Table of contents
 
@@ -16,7 +16,7 @@
 
 ## General info
 
-User able to view create and track daily workouts. Able to log multiple exercises in a workout on a given day. Can also to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, user can to track his distance traveled.
+The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
 ## Screenshots
 
@@ -30,7 +30,7 @@ User able to view create and track daily workouts. Able to log multiple exercise
 - Node.js
 - Express
 - MongoDB
-- Mongoose.js
+- IndexedDB
 
 ## Setup
 
@@ -40,27 +40,24 @@ This application runs in the browser. Nothing needs to be installed except for y
 
 ## Code Examples
 
-    router.post("/api/workouts", (req, res) => {
-      db.Workout.create(req.body)
-      .then((data) => {
-        res.json(data);
-      })
-      .catch((err) => {
-        res.status(400).json(err);
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js").then(reg => {
+          console.log("We found your service worker file!", reg);
+        });
       });
-    });
+    }
 
 ## Features
 
 List of features:
 
-- Add exercises to a previous workout plan.
-- Add new exercises to a new workout plan.
-- View multiple the combined weight of multiple exercises on the stats page.
+- Enter deposits offline.
+- Enter expenses offline.
 
 To-do list:
 
-- Refactor stats page.
+- Better UI.
 
 ## Status
 
