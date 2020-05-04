@@ -20,7 +20,7 @@ The user will be able to add expenses and deposits to their budget with or witho
 
 ## Screenshots
 
-![Example gif](/public/img/project.gif)
+![Example gif](/public/img/project.png)
 
 ## Technologies
 
