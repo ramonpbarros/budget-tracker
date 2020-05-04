@@ -63,7 +63,7 @@ To-do list:
 
 Project is: _in progress_
 
-- Make sure to check the application [here](https://serene-atoll-05842.herokuapp.com/).
+- Make sure to check the application [here](https://damp-eyrie-12966.herokuapp.com/).
 
 ## Contact
 
